@@ -32,11 +32,17 @@ function App() {
 
 
   const handlePageNumber = (event, newPage) => {
+    console.log("page Number Event", event);
+    console.log("page Number", newPage);
     setPageNumber(newPage)
   }
 
   const handleThemeChange = () => {
     setMode(prevMode => prevMode === "light" ? "dark" : "light")
+  }
+
+  const handlePageChange = index => {
+    setPageNumber(index)
   }
 
   return (
@@ -50,7 +56,7 @@ function App() {
           <SwipeableViews
             // axis="y"
             index={pageNumber}
-            onChangeIndex={handlePageNumber}
+            onChangeIndex={handlePageChange}
           >
             <Page pageNumber={pageNumber} index={0}>
               <Home helmetTitle={"وبسایت شخصی علی قربانی | صفحه اصلی"} />

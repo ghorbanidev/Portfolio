@@ -55,7 +55,7 @@ const Home = ({ helmetTitle }) => {
     }, [])
 
     const ParticlesLoaded = useCallback(async container => {
-        await console.log(container)
+        // await console.log(container)
     }, [])
 
     return (

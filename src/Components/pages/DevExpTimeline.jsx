@@ -3,14 +3,14 @@ import { devEdu } from "../../constants/details";
 import { Slide, Typography } from "@mui/material";
 import { HomeRepairServiceRounded } from "@mui/icons-material";
 
-const DevExpTimeline = ({loading}) => {
+const DevExpTimeline = ({ loading }) => {
     return (
         <Timeline position="right" sx={{ direction: "ltr" }}>
             {devEdu.map((item, index) => (
                 <Slide key={index} direction='up' in={loading} style={{
                     transitionDelay: loading ? `${index + 3}99ms` : "0ms"
                 }}>
-                    <TimelineItem key={index}>
+                    <TimelineItem>
                         <TimelineSeparator>
                             <TimelineDot
                                 color="warning"

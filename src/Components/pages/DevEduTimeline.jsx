@@ -10,7 +10,7 @@ const DevEduTimeline = ({ loading }) => {
                 <Slide key={index} direction='up' in={loading} style={{
                     transitionDelay: loading ? `${index + 3}99ms` : "0ms"
                 }}>
-                    <TimelineItem key={index}>
+                    <TimelineItem>
                         <TimelineSeparator>
                             <TimelineDot
                                 color="info"
