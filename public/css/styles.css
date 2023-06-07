@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "vazir";
+   src: url("../fonts/Vazir.eot");
+   src: url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir.woff2") format("woff2"),
+    url("../fonts/Vazir.woff") format("woff"),
+    url("../fonts/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "tanha";
+   src: url("../fonts/Tanha.eot");
+   src: url("../fonts/Tanha.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Tanha.woff2") format("woff2"),
+    url("../fonts/Tanha.woff") format("woff"),
+    url("../fonts/Tanha.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff"),
+    url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*{
+  padding:0;
+  margin:0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.MuiCard-root::-webkit-scrollbar{
+  display: none;
+}
+
+/* ScrollBar Style => */
+
+/* Width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+/* Handle On Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
